@@ -1,0 +1,32 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "stop": "forever stopall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackseliger/chat-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackseliger/chat-server/issues"
+  },
+  "homepage": "https://github.com/blackseliger/chat-server#readme",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^8.7.0"
+  }
+}
